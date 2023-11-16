@@ -1,4 +1,3 @@
-# CRIO_SOLUTION_START_MODULE_DEPLOYMENT
-# CRIO_SOLUTION_END_MODULE_DEPLOYMENT
-mongoimport --uri <add-url-connection-string-here> --drop --collection users --file data/export_qkart_users.json
-mongoimport --uri <add-url-connection-string-here> --drop --collection products --file data/export_qkart_products.json
+# Setup file template to upload data to MongoDB Atlas
+mongoimport --uri "mongodb://ac-b7iwsse-shard-00-00.stnt8qq.mongodb.net:27017,ac-b7iwsse-shard-00-01.stnt8qq.mongodb.net:27017,ac-b7iwsse-shard-00-02.stnt8qq.mongodb.net:27017/?replicaSet=atlas-11l8ax-shard-0" --ssl --authenticationDatabase admin --username spyketrash141 --password Linkspyke141 --drop --collection users --file data/export_qkart_users.json
+mongoimport --uri "mongodb://ac-b7iwsse-shard-00-00.stnt8qq.mongodb.net:27017,ac-b7iwsse-shard-00-01.stnt8qq.mongodb.net:27017,ac-b7iwsse-shard-00-02.stnt8qq.mongodb.net:27017/?replicaSet=atlas-11l8ax-shard-0" --ssl --authenticationDatabase admin --username spyketrash141 --password Linkspyke141 --drop --collection products --file data/export_qkart_products.json
